@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+    <link rel="stylesheet" href="/style/style.css" />
+
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <h2>Update Profile Photo</h2>
+
+  <input type="file" id="imageUpload" accept="image/*">
+  <button id="savePhoto">Save Photo</button>
+
+<script type="module">
+  import { navbar } from "./components/navbar.js";
+
+  document.getElementById("navbar").innerHTML = navbar();
+
+  document.getElementById("savePhoto").onclick = () => {
+    let file = document.getElementById("imageUpload").files[0];
+
+    if (file) {
+      let reader = new FileReader();
+      reader.onload = function () {
+        localStorage.setItem("profileImg", reader.result);
+        alert("Profile updated!");
+        location.reload();
+      };
+      reader.readAsDataURL(file);
+    } else {
+      alert("Please select an image!");
+    }
+  };
+</script>
+
+</body>
+</html>

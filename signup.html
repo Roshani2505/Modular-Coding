@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup</title>
+    <link rel="stylesheet" href="/style/style.css" />
+
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <h2>Signup</h2>
+
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Name" required><br><br>
+    <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button type="submit">Signup</button>
+  </form>
+
+  <div id="footer"></div>
+
+<script type="module">
+  import { navbar } from "./components/navbar.js";
+  import { footer } from "./components/footer.js";
+  import "./scripts/signup.js";
+
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("footer").innerHTML = footer();
+</script>
+
+</body>
+</html>
