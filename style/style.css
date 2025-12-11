@@ -1,0 +1,153 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Body Styling ===== */
+body {
+  background: #c6ddf4;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left button,
+.nav-right button {
+  padding: 8px 14px;
+  border: none;
+  background: #e7e7e7;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-left button:hover,
+.nav-right button:hover {
+  background: #d5d5d5;
+}
+
+/* ===== Profile Section ===== */
+.profile-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.profile-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ===== Profile Dropdown ===== */
+.dropdown {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  display: none;
+}
+
+.dropdown p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background: #ddd;
+}
+
+/* ===== Form Card ===== */
+.form-card {
+  width: 350px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 10px;
+  background: #0066ff;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.form-card button:hover {
+  background: #0054d6;
+}
+
+/* ===== Homepage Center Text ===== */
+.center-hero {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.center-hero h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.center-hero p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #ccb5b5;
+  text-align: center;
+  padding: 12px;
+  margin-top: auto;
+  box-shadow: 0 -2px 4px rgba(68, 43, 43, 0.1);
+}
